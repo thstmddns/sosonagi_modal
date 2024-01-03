@@ -6,6 +6,8 @@ from fastapi.middleware.cors import CORSMiddleware
 #  iniitialize fast api
 app = FastAPI
 
+
+# CORS 설정
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # 모든 출처 허용. 실제 배포 시에는 필요한 도메인만 허용해야 합니다.
@@ -14,3 +16,5 @@ app.add_middleware(
     allow_headers=["*"],  # 모든 HTTP 헤더 허용
 )
 tokenizer, model, device = initializeModels() 
+
+class 

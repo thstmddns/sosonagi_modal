@@ -4,6 +4,6 @@
 1. 가상환경설치
 - python -m venv soso
 
-2. 가상환경 실행
-- ./venv/Scripts/activate
+2. 가상환경 실행(bash 프롬프트)
+- source soso\\Scripts\\activate.bat
  -->
