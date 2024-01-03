@@ -17,4 +17,9 @@ app.add_middleware(
 )
 tokenizer, model, device = initializeModels() 
 
-class 
+class classifyInput(BaseModel):
+    classyfy : list
+
+@app.post("/classify")
+async def classify(input : classifyInput):
+    cInput = 
